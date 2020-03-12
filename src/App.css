@@ -3,6 +3,22 @@
   text-align: center;
 }
 
+/* tambahan */
+#components-layout-demo-side .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.site-layout .site-layout-background {
+  background: #ffffff;
+}
+
+.site-card-wrapper {
+  background: #88E1F2;
+  padding: 30px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
