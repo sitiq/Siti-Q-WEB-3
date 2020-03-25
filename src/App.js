@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {Component, Fragment} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Card, Col, Row } from 'antd';
 
+
+import CardProduct from './container/CardProduct/CardProduct';
 
 import { Layout, Menu, Breadcrumb } from 'antd';
 import {
@@ -65,6 +67,34 @@ class App extends React.Component {
     this.setState({ collapsed });
   };
 
+  state = {
+    order: 4,
+    name: 'sitiq'
+}
+//diganti props
+// handlePlus=()=>{
+//     // alert ('Plus Button');
+//     this.setState({
+//         order: this.state.order + 1
+//     })
+// }
+
+// handleMinus=()=>{
+//     // alert ('Minus Button');
+//     if(this.state.order > 0){
+//     this.setState({
+//         order: this.state.order - 1
+//         })
+//     }
+// }
+
+handleCounterChange =(newValue) => {
+    this.setState({
+        order:newValue
+    })
+
+}
+
   render () {
     return (
       <Layout style={{ minHeight: '100vh' }}>
@@ -118,7 +148,7 @@ class App extends React.Component {
             </Breadcrumb>
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
               {/* tambahan */}
-              <div className="site-card-wrapper">
+              {/* <div className="site-card-wrapper">
                 <Row gutter={16}>
                   <Col span={8}>
                   <Card title="Student" bordered={false}>
@@ -136,8 +166,22 @@ class App extends React.Component {
                 </Card>
                 </Col>
                 </Row>
+                </div> */}
+      
+            <Fragment>
+                <div className="header">
+                    <div className="logo">
+                        <b>SHOPPING</b>
+                        {/* <img src="" alt=""/> */}
+                    </div>
+                <div className="troley">
+                    <img src="https://icon-icons.com/icons2/67/PNG/128/shoppingcart_compra_13339.png" alt=""/>
+                    <div className="count">{this.state.order}</div>
+                  </div>
                 </div>
-
+                <CardProduct onCounterChange={(value)=>this.handleCounterChange(value)} />
+            </Fragment>   
+        
             </div>
           </Content>
           <Footer style={{ textAlign: 'center' }}>©2020 Created by Siti Q</Footer>
