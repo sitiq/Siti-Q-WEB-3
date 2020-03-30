@@ -2,10 +2,8 @@ import React, {Component, Fragment} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Card, Col, Row } from 'antd';
-
-
-import CardProduct from './container/CardProduct/CardProduct';
-
+// import CardProduct from './container/CardProduct/CardProduct';
+// import Product from './container/Product/Product';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import {
   DesktopOutlined,
@@ -68,7 +66,7 @@ class App extends React.Component {
   };
 
   state = {
-    order: 4,
+    order: 1,
     name: 'sitiq'
 }
 //diganti props
@@ -168,19 +166,19 @@ handleCounterChange =(newValue) => {
                 </Row>
                 </div> */}
       
-            <Fragment>
+            {/* <Fragment>
                 <div className="header">
                     <div className="logo">
                         <b>SHOPPING</b>
                         {/* <img src="" alt=""/> */}
-                    </div>
+                    {/* </div>
                 <div className="troley">
                     <img src="https://icon-icons.com/icons2/67/PNG/128/shoppingcart_compra_13339.png" alt=""/>
                     <div className="count">{this.state.order}</div>
                   </div>
                 </div>
                 <CardProduct onCounterChange={(value)=>this.handleCounterChange(value)} />
-            </Fragment>   
+            </Fragment>    */} */}
         
             </div>
           </Content>

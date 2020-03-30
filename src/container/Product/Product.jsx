@@ -4,7 +4,7 @@ import CardProduct from '../CardProduct/CardProduct';
 
 class Product extends Component{
     state = {
-        order: 4,
+        order: 1,
         name: 'sitiq'
     }
     //diganti props
@@ -33,13 +33,15 @@ class Product extends Component{
     render(){
         return(
             <Fragment>
+                <p>Halaman Product </p>
+                <hr />
                 <div className="header">
                     <div className="logo">
                         <b>SHOPPING</b>
                         {/* <img src="" alt=""/> */}
                     </div>
                 <div className="troley">
-                    <img src="https://icon-icons.com/icons2/67/PNG/128/shoppingcart_compra_13339.png" alt=""/>
+                    <img src="https://cdn.onlinewebfonts.com/svg/img_258388.png" alt=""/>
                     <div className="count">{this.state.order}</div>
                   </div>
                 </div>

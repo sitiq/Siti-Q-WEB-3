@@ -1,11 +1,14 @@
 .header {
-    background: #88E1F2;
+    background: goldenrod;
     display: flex;
-    width: 400px;
+    width: 380px;
     justify-content: space-between;
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 .logo {
@@ -27,7 +30,7 @@
 }
 
 .count {
-    background: #204051;
+    background: black;
     padding: 10px;
     border-radius: 50%;
     min-width: 10px;
@@ -38,7 +41,7 @@
     font-size: 11px;
     position: absolute;
     bottom: 0px;
-    left: -11px;
+    left: 11px;
 }
 
 .card {
@@ -63,7 +66,7 @@
 
 
 .minus {
-    background-color: #116979; /* Green */
+    background-color: blue; 
     border: none;
     color: white;
     padding: 15px 20px;
@@ -73,9 +76,10 @@
     font-size: 18px;
     border-radius: 4px;
     margin: 2px;
+    margin-left: 0px;
 }
 .plus {
-    background-color: #116979; /* Green */
+    background-color: blue; 
     border: none;
     color: white;
     padding: 15px 20px;
@@ -96,7 +100,7 @@
       
 }
 .product-price {
-    color: sandybrown;
+    color: goldenrod;
     font-size: 18px;
     font-weight: 500;
 }
