@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sitiq.github.io/WEB3A-431743-Siti-Qotijah-REACT/precache-manifest.809cd36ae2728d6f741d18dcb669bb18.js"
+  "/WEB3A-431743-Siti-Qotijah-REACT/precache-manifest.e38e23a96d80555e8ffcec80910b53ce.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/sitiq.github.io/WEB3A-431743-Siti-Qotijah-REACT/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/WEB3A-431743-Siti-Qotijah-REACT/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
