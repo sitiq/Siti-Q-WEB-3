@@ -2,7 +2,7 @@
   "name": "myfirstreact",
   "version": "0.1.0",
   "private": false,
-  "homepage": "sitiq.github.io/WEB3A-431743-Siti-Qotijah-REACT",
+  "homepage": "https://sitiq.github.io/WEB3A-431743-Siti-Qotijah-REACT/",
   "dependencies": {
     "@material-ui/core": "^4.9.8",
     "@testing-library/jest-dom": "^4.2.4",
